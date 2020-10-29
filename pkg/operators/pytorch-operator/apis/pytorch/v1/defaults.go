@@ -45,7 +45,8 @@ func setDefaultPort(spec *v1.PodSpec) {
 	hasPyTorchJobPort := false
 	for _, port := range spec.Containers[index].Ports {
 		if port.Name == DefaultPortName {
-			hasPyTorchJobPort = true
+			// hasPyTorchJobPort = true
+			hasPyTorchJobPort = false
 			break
 		}
 	}

@@ -40,4 +40,4 @@ const (
 	DefaultRestartPolicy = common.RestartPolicyOnFailure
 )
 
-var DefaultPort =  RandInt32(20000, 30000)
+var DefaultPort = RandInt32(20000, 30000)
