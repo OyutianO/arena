@@ -44,22 +44,25 @@ func setDefaultPort(spec *v1.PodSpec) {
 	}
 
 	hasPyTorchJobPort := false
-	/*for _, port := range spec.Containers[index].Ports {
+	for _, port := range spec.Containers[index].Ports {
 		if port.Name == DefaultPortName {
-			// hasPyTorchJobPort = true
-			hasPyTorchJobPort = false
+			hasPyTorchJobPort = true
 			break
 		}
-	}*/
-	fmt.Sprintf("hasPyTorchJobPort is false1")
+	}
 	if !hasPyTorchJobPort {
-		fmt.Sprintf("hasPyTorchJobPort is false2")
+
 		spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
 			Name:          DefaultPortName,
 			ContainerPort: DefaultPort,
 		})
 		fmt.Sprintf("spec.Containers[index].Ports is %v", spec.Containers[index].Ports)
 	}
+
+	spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
+		Name:          123,
+		ContainerPort: 27888,
+	})
 }
 
 func setDefaultReplicas(spec *common.ReplicaSpec) {
