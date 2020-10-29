@@ -35,7 +35,6 @@ func addDefaultingFuncs(scheme *runtime.Scheme) error {
 }
 
 // setDefaultPort sets the default ports for pytorch container.
-log.Debugf("start to setDefaultPort")
 func setDefaultPort(spec *v1.PodSpec) {
 	index := 0
 	for i, container := range spec.Containers {
