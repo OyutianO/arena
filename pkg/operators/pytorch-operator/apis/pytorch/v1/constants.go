@@ -35,9 +35,9 @@ const (
 	// DefaultContainerName is the name of the PyTorchJob container.
 	DefaultContainerName = "pytorch"
 	// DefaultPort is default value of the port.
-	// DefaultPort = 23456
+	DefaultPort = 26666
 	// DefaultRestartPolicy is default RestartPolicy for PyTorchReplicaSpec.
 	DefaultRestartPolicy = common.RestartPolicyOnFailure
 )
 
-var DefaultPort = RandInt32(20000, 30000)
+//var DefaultPort = RandInt32(20000, 30000)
