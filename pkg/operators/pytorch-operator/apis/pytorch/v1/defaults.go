@@ -43,13 +43,13 @@ func setDefaultPort(spec *v1.PodSpec) {
 	}
 
 	hasPyTorchJobPort := false
-	for _, port := range spec.Containers[index].Ports {
+	/*for _, port := range spec.Containers[index].Ports {
 		if port.Name == DefaultPortName {
 			// hasPyTorchJobPort = true
 			hasPyTorchJobPort = false
 			break
 		}
-	}
+	}*/
 	if !hasPyTorchJobPort {
 		spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
 			Name:          DefaultPortName,
