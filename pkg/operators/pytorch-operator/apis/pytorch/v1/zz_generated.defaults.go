@@ -20,6 +20,7 @@ package v1
 
 import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
+	log "github.com/sirupsen/logrus"
 )
 
 // RegisterDefaults adds defaulters functions to the given scheme.
@@ -32,6 +33,7 @@ func RegisterDefaults(scheme *runtime.Scheme) error {
 }
 
 func SetObjectDefaults_PyTorchJob(in *PyTorchJob) {
+	log.Infof("jinru to zz")
 	SetDefaults_PyTorchJob(in)
 }
 

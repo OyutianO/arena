@@ -216,7 +216,7 @@ func submitPyTorchJob(args []string, submitArgs *submitPyTorchJobArgs) (err erro
 	if err != nil {
 		return err
 	}
-
+	log.Infof("testtesttest")
 	log.Infof("The Job %s has been submitted successfully", name)
 	log.Infof("You can run `arena get %s --type %s` to check the job status", name, submitArgs.Mode)
 	return nil

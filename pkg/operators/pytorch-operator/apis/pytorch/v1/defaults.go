@@ -43,7 +43,7 @@ func setDefaultPort(spec *v1.PodSpec) {
 			break
 		}
 	}
-	log.Debugf("jinru to setDefaultPort")
+	log.Infof.("jinru to setDefaultPort")
 	hasPyTorchJobPort := false
 	for _, port := range spec.Containers[index].Ports {
 		if port.Name == DefaultPortName {
