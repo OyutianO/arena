@@ -20,9 +20,9 @@ import (
 	"time"
 )
 
-func RandInt64(min, max int64) int64 {
+func RandInt32(min, max int32) int32 {
 	rand.Seed(time.Now().UnixNano())
-	return rand.Int63n(max - min) + min
+	return rand.Int31n(max - min) + min
 }
 
 const (
@@ -40,4 +40,4 @@ const (
 	DefaultRestartPolicy = common.RestartPolicyOnFailure
 )
 
-var DefaultPort =  RandInt64(20000, 30000)
+var DefaultPort =  RandInt32(20000, 30000)
