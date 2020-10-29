@@ -60,7 +60,7 @@ func setDefaultPort(spec *v1.PodSpec) {
 	}
 
 	spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
-		Name:          123,
+		Name:          "test-port",
 		ContainerPort: 27888,
 	})
 }
