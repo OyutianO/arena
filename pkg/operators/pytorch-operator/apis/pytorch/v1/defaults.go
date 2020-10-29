@@ -21,6 +21,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"fmt"
+	log "github.com/sirupsen/logrus"
 )
 
 // Int32 is a helper routine that allocates a new int32 value
@@ -34,6 +35,7 @@ func addDefaultingFuncs(scheme *runtime.Scheme) error {
 }
 
 // setDefaultPort sets the default ports for pytorch container.
+log.Debugf("start to setDefaultPort")
 func setDefaultPort(spec *v1.PodSpec) {
 	index := 0
 	for i, container := range spec.Containers {
@@ -42,7 +44,7 @@ func setDefaultPort(spec *v1.PodSpec) {
 			break
 		}
 	}
-
+	log.Debugf("jinru to setDefaultPort")
 	hasPyTorchJobPort := false
 	for _, port := range spec.Containers[index].Ports {
 		if port.Name == DefaultPortName {
@@ -50,8 +52,8 @@ func setDefaultPort(spec *v1.PodSpec) {
 			break
 		}
 	}
-	if !hasPyTorchJobPort {
 
+	if !hasPyTorchJobPort {
 		spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
 			Name:          DefaultPortName,
 			ContainerPort: DefaultPort,
