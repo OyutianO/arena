@@ -16,7 +16,6 @@ package v1
 
 import (
 	common "github.com/kubeflow/arena/pkg/operators/tf-operator/apis/common/v1"
-	"fmt"
 	"math/rand"
 	"time"
 )

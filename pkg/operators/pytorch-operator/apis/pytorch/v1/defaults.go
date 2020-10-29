@@ -52,7 +52,7 @@ func setDefaultPort(spec *v1.PodSpec) {
 	if !hasPyTorchJobPort {
 		spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
 			Name:          DefaultPortName,
-			ContainerPort: DefaultPort,
+			ContainerPort: Int32(DefaultPort),
 		})
 	}
 }
