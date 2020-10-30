@@ -28,16 +28,14 @@ func RandInt32(min, max int32) int32 {
 const (
 	// EnvKubeflowNamespace is ENV for kubeflow namespace specified by user.
 	EnvKubeflowNamespace = "KUBEFLOW_NAMESPACE"
-
-	// DefaultPortName is name of the port used to communicate between Master and
-	// workers.
+	// DefaultPortName is name of the port used to communicate between Master and workers.
 	DefaultPortName = "pytorchjob-port"
 	// DefaultContainerName is the name of the PyTorchJob container.
 	DefaultContainerName = "pytorch"
 	// DefaultPort is default value of the port.
-	DefaultPort = 26666
+	// DefaultPort = 23456
 	// DefaultRestartPolicy is default RestartPolicy for PyTorchReplicaSpec.
 	DefaultRestartPolicy = common.RestartPolicyOnFailure
 )
 
-//var DefaultPort = RandInt32(20000, 30000)
+var DefaultPort = RandInt32(20000, 30000)

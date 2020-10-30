@@ -16,12 +16,10 @@ package v1
 
 import (
 	"strings"
-
 	common "github.com/kubeflow/arena/pkg/operators/tf-operator/apis/common/v1"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"fmt"
-	log "github.com/sirupsen/logrus"
 )
 
 // Int32 is a helper routine that allocates a new int32 value
@@ -43,7 +41,7 @@ func setDefaultPort(spec *v1.PodSpec) {
 			break
 		}
 	}
-	log.Infof("jinru to setDefaultPort")
+
 	hasPyTorchJobPort := false
 	for _, port := range spec.Containers[index].Ports {
 		if port.Name == DefaultPortName {
@@ -59,11 +57,6 @@ func setDefaultPort(spec *v1.PodSpec) {
 		})
 		fmt.Sprintf("spec.Containers[index].Ports is %v", spec.Containers[index].Ports)
 	}
-
-	spec.Containers[index].Ports = append(spec.Containers[index].Ports, v1.ContainerPort{
-		Name:          "test-port",
-		ContainerPort: 27888,
-	})
 }
 
 func setDefaultReplicas(spec *common.ReplicaSpec) {
