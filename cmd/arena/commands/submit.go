@@ -140,6 +140,14 @@ func (s *submitArgs) transform() (err error) {
 			})
 		}
 	}
+
+	scratch := util.get_linux_command("echo $HOME")
+	s.DataDirs = append(s.DataDirs, dataDirVolume{
+		Name:          fmt.Sprintf("scratch"),
+		HostPath:      scratch,
+		ContainerPath: scratch,
+	})
+
 	// 2. handle data sets
 	log.Debugf("dataset: %v", dataset)
 	if len(dataset) > 0 {
