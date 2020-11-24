@@ -141,7 +141,7 @@ func (s *submitArgs) transform() (err error) {
 		}
 	}
 
-	scratch := "/scratch/" + util.Get_linux_command("echo $HOME")
+	scratch := "/scratch/" + util.Get_linux_command("echo $USER")
 	s.DataDirs = append(s.DataDirs, dataDirVolume{
 		Name:          fmt.Sprintf("scratch"),
 		HostPath:      scratch,
