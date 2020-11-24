@@ -141,6 +141,12 @@ func (s *submitArgs) transform() (err error) {
 		}
 	}
 
+	/*  增加北京客户挂载点：
+	物理机器目录：/opt/usim/usim-dev ->容器目录：/opt/usim/usim-dev
+	物理机器目录：/dat/all -> 容器目录：/dat/all
+	物理机器目录：/scratch/当前用户 -> 容器目录：/scratch/当前用户
+	 */
+
 	scratch := "/scratch/" + util.Get_linux_command("echo $USER")
 	s.DataDirs = append(s.DataDirs, dataDirVolume{
 		Name:          fmt.Sprintf("scratch"),
