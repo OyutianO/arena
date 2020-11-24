@@ -1,7 +1,6 @@
 package util
 
 import (
-	"fmt"
 	"io/ioutil"
 	"os/exec"
 	log "github.com/sirupsen/logrus"
@@ -14,7 +13,7 @@ func Get_linux_command(command string) string {
 	//创建获取命令输出管道
 	stdout, err := cmd.StdoutPipe()
 	if err != nil {
-		log.Errorf("Failed to list services due to %v", err)("Error:can not obtain stdout pipe for command:%s\n", err)
+		log.Errorf("Error:can not obtain stdout pipe for command:%s\n", err)
 	}
 
 	//执行命令
