@@ -154,6 +154,20 @@ func (s *submitArgs) transform() (err error) {
 		ContainerPath: scratch,
 	})
 
+	datAll := "/dat/all"
+	s.DataDirs = append(s.DataDirs, dataDirVolume{
+		Name:          fmt.Sprintf("dat-all"),
+		HostPath:      datAll,
+		ContainerPath: datAll,
+	})
+
+	usimDev := "/opt/usim/usim-dev"
+	s.DataDirs = append(s.DataDirs, dataDirVolume{
+		Name:          fmt.Sprintf("usim-dev"),
+		HostPath:      usimDev,
+		ContainerPath: usimDev,
+	})
+
 	// 2. handle data sets
 	log.Debugf("dataset: %v", dataset)
 	if len(dataset) > 0 {
