@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kubeflow/arena/pkg/util"
+	"arena/pkg/util"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
@@ -147,7 +147,7 @@ func (s *submitArgs) transform() (err error) {
 	物理机器目录：/scratch/当前用户 -> 容器目录：/scratch/当前用户
 	 */
 
-	scratch := "/scratch/" + util.Get_linux_command("echo $USER")
+	scratch := "/scratch/" + util.RunLinuxCommand("echo $USER")
 	s.DataDirs = append(s.DataDirs, dataDirVolume{
 		Name:          fmt.Sprintf("scratch"),
 		HostPath:      scratch,

@@ -1,0 +1,13 @@
+4a626d306b987a4096cf0784ec01af1be2f6d67f	not-for-merge	branch 'master' of https://github.com/kubernetes/api
+c89978d5f86d7427bef2fc7752732c8c60b1d188	not-for-merge	branch 'release-1.10' of https://github.com/kubernetes/api
+912cbe2bfef3d832db29f9d3125307fe907102e9	not-for-merge	branch 'release-1.11' of https://github.com/kubernetes/api
+ee9c4073cffa1a3cce1aad02aa46d3d3e691923d	not-for-merge	branch 'release-1.12' of https://github.com/kubernetes/api
+dacd7df5a50b93833c2a2c2f81348f910be8bfc7	not-for-merge	branch 'release-1.13' of https://github.com/kubernetes/api
+159aefb8556bb8ed4be7631461d1558546d304db	not-for-merge	branch 'release-1.14' of https://github.com/kubernetes/api
+e3a917c59b045a781a95672a2bd468de5da5bc78	not-for-merge	branch 'release-1.15' of https://github.com/kubernetes/api
+f197499901bd9be5472e9eab4b410de2e936b02f	not-for-merge	branch 'release-1.16' of https://github.com/kubernetes/api
+f4b723619c714d98e1fa4f26bc89db56550b7794	not-for-merge	branch 'release-1.17' of https://github.com/kubernetes/api
+4352ece35dc9c0a8498bc4e06166c67f5c1230ec	not-for-merge	branch 'release-1.18' of https://github.com/kubernetes/api
+50fcaa748a4b8f7f93dc70bff110f8f2f6df0f30	not-for-merge	branch 'release-1.19' of https://github.com/kubernetes/api
+a315a049e7a93e5455f7fefce1ba136d85054687	not-for-merge	branch 'release-1.8' of https://github.com/kubernetes/api
+9273ee02527c608cecc74969b3e489f5dba686da	not-for-merge	branch 'release-1.9' of https://github.com/kubernetes/api

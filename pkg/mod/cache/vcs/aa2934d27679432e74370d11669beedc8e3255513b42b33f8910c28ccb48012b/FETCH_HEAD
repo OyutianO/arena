@@ -1,0 +1,7 @@
+67c1a7788c3c73166b30bbecca64a0e3707c4be9		branch 'f-2q' of https://github.com/hashicorp/golang-lru
+eb529947af531eb529020ba979a7a887338904d1		branch 'master' of https://github.com/hashicorp/golang-lru
+20f1fb78b0740ba8c3cb143a61e86ba5c8669768		tag 'v0.5.0' of https://github.com/hashicorp/golang-lru
+7087cb70de9f7a8bc0a10c375cb0d2280a8edf9c		tag 'v0.5.1' of https://github.com/hashicorp/golang-lru
+881666a9a6fd9b1a7ceecdb853b12c106791809b		tag 'v0.5.2' of https://github.com/hashicorp/golang-lru
+7f827b33c0f158ec5dfbba01bb0b14a4541fd81d		tag 'v0.5.3' of https://github.com/hashicorp/golang-lru
+14eae340515388ca95aa8e7b86f0de668e981f54		tag 'v0.5.4' of https://github.com/hashicorp/golang-lru

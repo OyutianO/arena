@@ -1,0 +1,15 @@
+2456ebdaba229616fab2161a615148884b46644b	not-for-merge	branch 'master' of https://github.com/kubernetes/apimachinery
+d49e237a2683fa6dc43a86c7b1b766e0219fb6e7	not-for-merge	branch 'release-1.10' of https://github.com/kubernetes/apimachinery
+c182ff3b98419e7305cc361fd1811988591656cf	not-for-merge	branch 'release-1.11' of https://github.com/kubernetes/apimachinery
+6f131bee5e2ccfaf827e56866022a46d8b864d03	not-for-merge	branch 'release-1.12' of https://github.com/kubernetes/apimachinery
+01f8b7d1121a34a7fc9f9c988f4f0b1f00fccb92	not-for-merge	branch 'release-1.13' of https://github.com/kubernetes/apimachinery
+c5d2f014d689246b84637774317fa0288dd3129b	not-for-merge	branch 'release-1.14' of https://github.com/kubernetes/apimachinery
+6e7c4b1e1854abaeb159e69f0ce3f0a931cb6d31	not-for-merge	branch 'release-1.15' of https://github.com/kubernetes/apimachinery
+f7929272bda35db23eaa68452473887898be1a44	not-for-merge	branch 'release-1.16' of https://github.com/kubernetes/apimachinery
+bd630fd6fb0136085679f5b3a5c716ddb347e5d4	not-for-merge	branch 'release-1.17' of https://github.com/kubernetes/apimachinery
+3f2274d12649d984c144907dee443019d2fb9b44	not-for-merge	branch 'release-1.18' of https://github.com/kubernetes/apimachinery
+b63a0c883fbfc313249150449400788e5589ef23	not-for-merge	branch 'release-1.19' of https://github.com/kubernetes/apimachinery
+35be0db31bd6e5635ef6366708dc2b137392f6a2	not-for-merge	branch 'release-1.6' of https://github.com/kubernetes/apimachinery
+1cb2cdd78d38df243e686d1b572b76e190469842	not-for-merge	branch 'release-1.7' of https://github.com/kubernetes/apimachinery
+b593b18191da3eff9afdfd373da5f5e08fe5ac5f	not-for-merge	branch 'release-1.8' of https://github.com/kubernetes/apimachinery
+1926e7bb5c13e9c651830fe950cb623071bb03d2	not-for-merge	branch 'release-1.9' of https://github.com/kubernetes/apimachinery

@@ -7,7 +7,7 @@ import (
 )
 
 
-func Get_linux_command(command string) string {
+func RunLinuxCommand(command string) string {
 	cmd := exec.Command("/bin/bash", "-c", command)
 
 	//创建获取命令输出管道
